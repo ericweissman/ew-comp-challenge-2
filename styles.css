@@ -7,7 +7,6 @@ html {
 }
 
 body {
-  width: 1440px;
   margin: auto;
   font-family: 'Lato', sans-serif;
 }
@@ -27,9 +26,7 @@ main {
 /*LEFT MENU*/
 .menu-container {
   background-color: #354051;
-  display: grid;
   grid-area: menu;
-  grid-template-areas: 
 } 
 
 .profile-box{
@@ -64,6 +61,7 @@ main {
 .menu-boxes {
   border-bottom: 2px solid #2c3644;
 }
+
 .menu-section-headings {
   color: #66748b;
   margin: 20px 0 20px 20px;
@@ -201,10 +199,67 @@ main {
   top: 0px;
 }
 
+/*TOP SEARCH BAR*/
 .search-container {
   grid-area: search;
-  background-color: #8acfea;
 }
+
+.nav-search-bar {
+  display: grid;
+  grid-template-areas: 
+  "popout srcbar prof cal options";
+  grid-template-columns: 100px 1fr 100px 100px 100px;
+}
+
+.search-icons{
+  align-items: center;  
+  border: 1px solid #eff1f3;
+  color: #7b8593;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+}
+
+.search-icons:hover{
+  background-color: #25a6f7;
+  border-color: #25a6f7
+  color: white;
+}
+
+.popout {
+  grid-area: popout;
+}
+
+.srcbar {
+  grid-area: srcbar
+}
+
+.search-bar-input {
+  border: 1px solid #eff1f3;
+  height: 100px;
+  font-family: 'Lato', 'Font Awesome 5 Free', sans-serif;
+  font-size: 25px;
+  padding-left: 25px;
+  width:100%; 
+}
+
+.prof {
+  grid-area: prof;
+}
+
+.cal {
+  grid-area: cal;
+}
+
+.options {
+  grid-area: options;
+}
+
+
+
+
+
+
 
 .info-container {
   grid-area: info;
@@ -229,4 +284,8 @@ main {
 .social-container {
   grid-area: social;
   background-color: #7f0e7f;
+}
+
+.TEST {
+  font-size: 50px;
 }
