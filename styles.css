@@ -268,15 +268,14 @@ a {
 
 /*JOB LISTING TITLE*/
 .info-container {
-  grid-area: info;
   display: flex;
-  justify-content: space-between
+  grid-area: info;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .job-listing {
-  margin-left: 40px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0 25px 40px;
   }
 
 .job-title {
@@ -294,24 +293,23 @@ a {
 }
 
 .job-info-buttons {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   margin-right: 40px;
 }
 
 .open-button {
+  align-items: center;
   border: 2px solid #eff1f3;
   border-radius: 20px;
-  width: 95px;
-  height: 40px;
+  color: #707b8b;
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 13px;
   font-weight: 800;
-  color: #707b8b;
+  height: 40px;
+  justify-content: center;
   margin-right: 15px;
+  width: 95px;
 }
 
 .dot {
@@ -320,20 +318,38 @@ a {
 }
 
 .small-buttons {
-  border-radius: 100%;
-  border: 2px solid #eff1f3;
-  color: #9ba3ae;
-  height: 40px;
-  width: 40px;
-  display: flex;
   align-items: center;
+  border: 2px solid #eff1f3;
+  border-radius: 100%;
+  color: #9ba3ae;
+  display: flex;
+  height: 40px;
   justify-content: center;
   margin-right: 15px;
+  width: 40px;
 }
 
 .nav-container {
   grid-area: nav;
-  background-color: #82c7a5;
+}
+
+.tabs {
+  display: flex;
+  margin-left: 20px;
+}
+
+.tab-btns {
+color: #9eaabc;
+border-left: 5px solid transparent;
+height: 35px;
+font-size: 14px;
+font-weight: 700;
+padding: 0 25px 0 25px;
+}
+
+.tab-btns:hover {
+  border-bottom: 5px solid #25a6f7;
+  color: #4e515e;
 }
 
 .graph-container {
