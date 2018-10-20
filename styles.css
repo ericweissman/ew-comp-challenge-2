@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 1440px;
+  margin: auto;
+}
+
+/*MAIN GRID ELEMENTS*/
+main {
+  display: grid;
+  grid-template-areas: 
+    "menu search search"
+    "menu info info"
+    "menu nav nav"
+    "menu graph graph"
+    "menu job social";
+  grid-template-columns: 100px 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.menu-container {
+  grid-area: menu;
+  background-color: #12807f;
+} 
+
+.search-container {
+  grid-area: search;
+  background-color: #8acfea;
+}
+
+.info-container {
+  grid-area: info;
+  background-color: #fd644e;
+}
+
+.nav-container {
+  grid-area: nav;
+  background-color: #82c7a5;
+}
+
+.graph-container {
+  grid-area: graph;
+  background-color: #808080;
+}
+
+.job-container {
+  grid-area: job;
+  background-color: #aed8e5;
+}
+
+.social-container {
+  grid-area: social;
+  background-color: #7f0e7f;
+}
