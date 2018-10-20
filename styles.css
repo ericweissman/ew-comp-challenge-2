@@ -204,6 +204,10 @@ a {
   top: 0px;
 }
 
+.last-check {
+  margin-bottom: 20px;
+}
+
 /*TOP SEARCH BAR*/
 .search-container {
   grid-area: search;
@@ -285,11 +289,19 @@ a {
 }
 
 .job-title-details {
+  align-items: center;
   color:#8a95a4;
+  display: flex;
 }
 
 .location-icon {
   padding-right: 5px;
+}
+
+.bullet-small {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 7px;
 }
 
 .job-info-buttons {
@@ -329,22 +341,23 @@ a {
   width: 40px;
 }
 
+/* NAV TABS CONTAINER */
 .nav-container {
   grid-area: nav;
 }
 
 .tabs {
   display: flex;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .tab-btns {
-color: #9eaabc;
-border-left: 5px solid transparent;
-height: 35px;
-font-size: 14px;
-font-weight: 700;
-padding: 0 25px 0 25px;
+  color: #9eaabc;
+  border-left: 5px solid transparent;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 25px 0 25px;
 }
 
 .tab-btns:hover {
@@ -352,21 +365,223 @@ padding: 0 25px 0 25px;
   color: #4e515e;
 }
 
+/* GRAPH AREA */
 .graph-container {
+  background-color: #ecf2f6;
+  display: grid;
   grid-area: graph;
-  background-color: #808080;
+  grid-template-areas: 
+  "circle bar"
+  "button1 button2"
+  "line line"
+  padding-bottom: 20px;
 }
 
+.circle-graph-area {
+  display: flex;
+  grid-area: circle;
+  margin-top: 20px;
+}
+
+.fake-circles {
+  height: 225px;
+}
+
+.bar-graph-area {
+  display: flex;
+  grid-area: bar;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.bar-graph {
+  height: 250px;
+}
+
+.left-graph-btn {
+  display: flex;
+  grid-area: button1;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.graph-btns {
+  align-items: center;
+  background-color: white;
+  border: 2px solid #eff1f3;
+  border-radius: 20px;
+  color: #707b8b;
+  display: flex;
+  font-size: 13px;
+  font-weight: 800;
+  height: 40px;
+  justify-content: center;
+  margin-right: 15px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+.totals-btn {
+  width: 210px;
+}
+
+.bullet-btns {
+  padding: 0 5px;
+  font-size: 7px;
+}
+
+.right-graph-btn {
+  display: flex;
+  grid-area: button2;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.per-day-btn {
+  width: 150px;
+}
+
+/* JOB TABLE AREA */
 .job-container {
   grid-area: job;
-  background-color: #aed8e5;
+  display: flex;
+  justify-content: center;
+  background-color:#ecf2f6
 }
 
+table {
+  margin: 30px auto;
+}
+
+th {
+  background-color: #707d94;
+  height: 75px;
+}
+
+.test-hr {
+  width: 200px;  
+}
+.head-column-1 {
+  background-color: #707d94;
+  height: 75px;
+}
+
+.head-column-2 {
+  background-color: #707d94;
+  height: 75px;
+}
+.column-1 {
+  background-color: white;
+}
+
+.column-2 {
+  background-color: white;
+}
+
+/* SOCIAL SHARING AREA */
 .social-container {
+  background-color: #ecf2f6;
+  display: grid;
   grid-area: social;
-  background-color: #7f0e7f;
+  grid-template-areas:
+    "soc-btns"
+    "link"
+    "widget"
+    "upload"
 }
 
-.TEST {
-  font-size: 100px;
+.social-links {
+  display: flex;
+  flex-direction: column;
+  grid-area: soc-btns;
+  margin: auto;
+}
+
+.social-buttons {
+  align-items: center;
+  color: white;
+  display: flex;
+  height: 50px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.fb {
+  background-color: #4d73bf;
+}
+
+.twit {
+  background-color: #1caaec;
+}
+
+.lin {
+  background-color: #147eb9;
+}
+
+.social-icons {
+  margin-right: 50px;
+  padding-left: 30px;
+}
+
+.share-columns {
+  color: #606d7e;
+  border-bottom: 2px solid #d2dae2;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-bottom: 30px;
+  width: 300px;
+}
+
+.link-to-job {
+  grid-area: link;
+}
+
+.widget {
+  grid-area: widget;
+}
+
+.upload {
+  grid-area: upload;
+}
+
+.share-icons {
+  padding-right: 8px;
+}
+
+.share-titles {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 8px;
+  margin-top: 30px;
+}
+
+.share-text {
+  font-weight: 350;
+  margin-bottom: 20px;
+}
+
+.input-add-on {
+  display: flex;
+}
+
+.text-input {
+  border: 2px;
+  border-radius: 5px;
+  height: 50px;
+  flex: 1;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.copy-btn {
+  background-color: #4dbac0;
+  border: 2px;
+  border-radius: 3px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0 15px;
 }
