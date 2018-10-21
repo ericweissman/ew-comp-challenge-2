@@ -371,7 +371,7 @@ a {
   display: grid;
   grid-area: graph;
   grid-template-areas: 
-  "circle bar"
+  "prog bar"
   "button1 button2"
   "line line"
   padding-bottom: 20px;
@@ -379,7 +379,7 @@ a {
 
 .circle-graph-area {
   display: flex;
-  grid-area: circle;
+  grid-area: prog;
   margin-top: 20px;
 }
 
@@ -442,39 +442,117 @@ a {
 
 /* JOB TABLE AREA */
 .job-container {
-  grid-area: job;
+  background-color:#ecf2f6;
   display: flex;
+  grid-area: job;
   justify-content: center;
-  background-color:#ecf2f6
 }
 
-table {
-  margin: 30px auto;
+.job-table {
+  border-collapse: collapse;
+  margin-left: 30px;
+  table-layout: fixed;
 }
 
-th {
-  background-color: #707d94;
-  height: 75px;
-}
-
-.test-hr {
-  width: 200px;  
-}
 .head-column-1 {
   background-color: #707d94;
-  height: 75px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 30px;
+  text-transform: uppercase;
+  vertical-align: bottom;
+  width: 230px;
 }
 
 .head-column-2 {
   background-color: #707d94;
-  height: 75px;
+  color: white;
+  padding-bottom: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  vertical-align: bottom;
+  width:525px;
+}
+
+.edit-btn {
+  background-color: #7d8ba5;
+  border: 1px solid #7d8ba5;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 90px;
+  align-items: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.edit-icon {
+  padding-right: 5px;
 }
 .column-1 {
   background-color: white;
+  font-size: 14px;
+  font-weight: 600;
+  color: #7b899f;
+  padding-left: 45px;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
 
+.top {
+  padding-top: 20px;
+}
+
+.bottom {
+  padding-bottom: 20px;
+}
+
+.hiring-lead {
+  display: flex;
+  align-items: center;
+}
+
+.hiring-img {
+  border-radius: 100%;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.salary {
+  font-weight: 900;
+  color: #596678;
+}
 .column-2 {
   background-color: white;
+  font-size: 15px;
+  font-weight: 400;
+  color: #7b899f;
+  padding-left: 20px;
+  padding-right: 10px;  
+}
+
+.divider {
+  padding: 20px 0;
+  background-color: white;
+}
+
+.divider-hiring-top {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.divider-hiring-bottom {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.divider-style {
+  color: #eef2f5;
+  border: 1px solid #eef2f5;
+  width: 675px;
 }
 
 /* SOCIAL SHARING AREA */
