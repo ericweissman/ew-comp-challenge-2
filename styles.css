@@ -7,8 +7,9 @@ html {
 }
 
 body {
-  margin: auto;
   font-family: 'Lato', sans-serif;
+  margin: auto;
+  max-width: 1440px;
 }
 
 /*MAIN GRID ELEMENTS*/
@@ -307,7 +308,7 @@ a {
 .job-info-buttons {
   align-items: center;
   display: flex;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .open-button {
@@ -373,25 +374,86 @@ a {
   grid-template-areas: 
   "prog bar"
   "button1 button2"
-  "line line"
+  "line line";
   padding-bottom: 20px;
 }
 
+/* CIRCLE GRAPH AREA */
 .circle-graph-area {
   display: flex;
   grid-area: prog;
-  margin-top: 20px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-right: 30px;
 }
 
-.fake-circles {
-  height: 225px;
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 150px;
 }
 
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 165px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #d8e3eb;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.one .circle {
+  stroke: #25a6f7;
+}
+
+.circular-chart.two .circle {
+  stroke: #4CC790;
+}
+
+.circular-chart.three .circle {
+  stroke: #ad6bae;
+}
+
+.text-large {
+  fill: #666;
+  font-size: 9px;
+  text-anchor: middle;
+  font-weight: 600;
+}
+
+.text-small {
+   fill: #666;
+  font-size: 3px;
+  text-anchor: middle;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* BAR GRAPH AREA */
 .bar-graph-area {
   display: flex;
   grid-area: bar;
   justify-items: center;
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 .bar-graph {
@@ -403,6 +465,7 @@ a {
   grid-area: button1;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .graph-btns {
@@ -434,10 +497,38 @@ a {
   grid-area: button2;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .per-day-btn {
   width: 150px;
+}
+
+/* LINE AREA */
+.collapse-line-area{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: line;
+}
+
+.divider-style-1 {
+  color: #d2dae2;
+  border: 1px solid #d2dae2;
+  width: 525px;
+  margin: 10px 20px;
+}
+
+.collapse-button {
+  align-items: center;
+  border: 2px solid #d2dae2;
+  border-radius: 100%;
+  color: #9ba3ae;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+  background-color: white;
 }
 
 /* JOB TABLE AREA */
@@ -450,7 +541,7 @@ a {
 
 .job-table {
   border-collapse: collapse;
-  margin-left: 30px;
+  margin-left: 75px;
   table-layout: fixed;
 }
 
@@ -525,9 +616,10 @@ a {
 }
 .column-2 {
   background-color: white;
+  color: #7b899f;
   font-size: 15px;
   font-weight: 400;
-  color: #7b899f;
+  line-height: 20px;
   padding-left: 20px;
   padding-right: 10px;  
 }
