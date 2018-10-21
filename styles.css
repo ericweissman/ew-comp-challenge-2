@@ -17,6 +17,7 @@ main {
   display: grid;
   grid-template-areas: 
     "menu search search"
+    "menu tablet tablet"
     "menu info info"
     "menu nav nav"
     "menu graph graph"
@@ -754,4 +755,52 @@ a {
   font-weight: 600;
   font-size: 16px;
   padding: 0 15px;
+}
+
+/* TABLET TOP BAR */
+.top-nav-tablet {
+  grid-area: tablet;
+  display: flex;
+  background-color: #354051;
+  justify-content: space-between;
+  display: none;
+}
+
+.tablet-name-pic {
+  display: flex;
+  align-items: center;
+}
+.tablet-profile-pic {
+  border-radius: 100%;
+  height: 75px;
+  margin-top: 10px;
+  width: 75px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.tablet-profile-name {
+  color: #9eaabc;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.tablet-menu-btns {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.tablet-btn-names:hover{
+  color: white;
+}
+
+.tablet-icons {
+  margin-right: 5px;
+}
+
+.tablet-btn-names {
+  color: #9eaabc;
+  font-size: 18px;
+  margin-right: 20px;
 }
