@@ -81,13 +81,9 @@ a {
 }
 
 .menu-icons{
-  color: #bfc7d4;
   padding-right: 15px;
 }
 
-.menu-icons:hover {
-  color: white;
-}
 
 .menu-btns {
   align-items: center;
@@ -250,7 +246,7 @@ a {
 .search-bar-input {
   border: 1px solid #eff1f3;
   height: 60px;
-  font-family: 'Lato', 'Font Awesome 5 Free', sans-serif;
+  font-family: 'Font Awesome 5 Free', 'Lato', sans-serif;
   font-size: 20px;
   padding-left: 25px;
   width:100%; 
@@ -548,6 +544,7 @@ a {
 
 .head-column-1 {
   background-color: #707d94;
+  border-top-left-radius: 5px;
   color: white;
   font-size: 16px;
   font-weight: 600;
@@ -559,6 +556,7 @@ a {
 
 .head-column-2 {
   background-color: #707d94;
+  border-top-right-radius: 5px;
   color: white;
   padding-bottom: 20px;
   text-align: left;
@@ -598,6 +596,8 @@ a {
 
 .bottom {
   padding-bottom: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .hiring-lead {
@@ -737,7 +737,8 @@ a {
 
 .text-input {
   border: 2px;
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
   height: 50px;
   flex: 1;
   font-family: 'Lato', sans-serif;
@@ -749,7 +750,8 @@ a {
 .copy-btn {
   background-color: #4dbac0;
   border: 2px;
-  border-radius: 3px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;  
   color: white;
   font-family: 'Lato', sans-serif;
   font-weight: 600;
@@ -757,26 +759,36 @@ a {
   padding: 0 15px;
 }
 
+.upload-input {
+  border: 2px;
+  border-radius: 5px;
+  height: 50px;
+  flex: 1;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 15px;
+}
+
+
 /* TABLET TOP BAR */
 .top-nav-tablet {
-  grid-area: tablet;
-  display: flex;
   background-color: #354051;
-  justify-content: space-between;
+  display: flex;
   display: none;
+  grid-area: tablet;
+  justify-content: space-between;
 }
 
 .tablet-name-pic {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 .tablet-profile-pic {
   border-radius: 100%;
   height: 75px;
-  margin-top: 10px;
+  margin: 10px 0 10px 20px;
   width: 75px;
-  margin-left: 20px;
-  margin-bottom: 10px;
 }
 
 .tablet-profile-name {
@@ -786,8 +798,8 @@ a {
 }
 
 .tablet-menu-btns {
-  display: flex;
   align-items: center;
+  display: flex;
   margin-left: 20px;
 }
 
