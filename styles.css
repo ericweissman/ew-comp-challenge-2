@@ -245,9 +245,11 @@ a {
 
 .search-bar-input {
   border: 1px solid #eff1f3;
+  color: #7b8593;
   height: 60px;
   font-family: 'Font Awesome 5 Free', 'Lato', sans-serif;
   font-size: 20px;
+  font-weight: 600;
   padding-left: 25px;
   width:100%; 
 }
@@ -351,10 +353,10 @@ a {
 
 .tab-btns {
   color: #9eaabc;
-  border-left: 5px solid transparent;
   height: 35px;
   font-size: 14px;
   font-weight: 700;
+  margin-left: 2px;
   padding: 0 25px 0 25px;
 }
 
@@ -386,16 +388,9 @@ a {
 
 .circular-chart {
   display: block;
+  height: 150px;
   margin: 10px auto;
-  max-width: 80%;
-  max-height: 150px;
-}
-
-.circular-chart {
-  display: block;
-  margin: 10px auto;
-  max-width: 80%;
-  max-height: 165px;
+  width: 150px;
 }
 
 .circle-bg {
@@ -418,11 +413,11 @@ a {
 }
 
 .circular-chart.one .circle {
-  stroke: #25a6f7;
+  stroke: #4CC790; 
 }
 
 .circular-chart.two .circle {
-  stroke: #4CC790;
+  stroke: #25a6f7;
 }
 
 .circular-chart.three .circle {
@@ -739,6 +734,7 @@ a {
   border: 2px;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
+  color: #7b899f;
   height: 50px;
   flex: 1;
   font-family: 'Lato', sans-serif;
@@ -762,6 +758,7 @@ a {
 .upload-input {
   border: 2px;
   border-radius: 5px;
+  color: #7b899f;
   height: 50px;
   flex: 1;
   font-family: 'Lato', sans-serif;
