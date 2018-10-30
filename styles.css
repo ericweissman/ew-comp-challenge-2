@@ -1046,8 +1046,6 @@ footer {
   }
 }
 
-
-
 @media screen and (max-width: 321px) {
   .main {
     display: grid;
