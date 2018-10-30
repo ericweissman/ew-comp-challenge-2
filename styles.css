@@ -86,7 +86,7 @@ a {
 .menu-btns {
   align-items: center;
   color: #9eaabc;
-  border: 5px solid transparent;
+  border: 5px solid #354051 ;
   display: flex;
   height: 35px;
   font-size: 14px;
@@ -281,6 +281,7 @@ a {
 
 .tab-btns {
   color: #9eaabc;
+  border-bottom: 5px solid white;
   height: 35px;
   font-size: 14px;
   font-weight: 700;
@@ -591,74 +592,6 @@ footer {
   height: 40px;
   margin-right: 10px;
 }
-
-/* .column-1 {
-  background-color: white;
-  font-size: 14px;
-  font-weight: 600;
-  color: #7b899f;
-  padding-left: 45px;
-  vertical-align: middle;
-  text-transform: uppercase;
-}
-
-.top {
-  padding-top: 20px;
-}
-
-.bottom {
-  padding-bottom: 20px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.hiring-lead {
-  display: flex;
-  align-items: center;
-}
-
-.hiring-img {
-  border-radius: 100%;
-  height: 40px;
-  margin-right: 10px;
-}
-
-.salary {
-  font-weight: 900;
-  color: #596678;
-}
-.column-2 {
-  background-color: white;
-  color: #7b899f;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 20px;
-  padding-left: 20px;
-  padding-right: 10px;  
-}
-
-.divider {
-  padding: 20px 0;
-  background-color: white;
-}
-
-.divider-hiring-top {
-  background-color: white;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-.divider-hiring-bottom {
-  background-color: white;
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
-.divider-style {
-  color: #eef2f5;
-  border: 1px solid #eef2f5;
-  width: 675px;
-} */
 
 /* SOCIAL SHARING AREA */
 .social-container {
