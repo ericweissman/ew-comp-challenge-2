@@ -13,4 +13,3 @@ This project involved re-creating a website layout based on a static comp using 
 ## Built With
 * CSS
 * HTML
-* Flex
